@@ -1,0 +1,68 @@
+html, body{
+    height: 100%;
+}
+.main{
+    min-height: 100%;
+    padding-bottom: 100px;
+}
+.footer{
+    position: relative;
+    bottom: 10px;
+    height: 50px;
+    margin-left: 300px;
+}
+.title {
+  text-align: center;
+}
+.block {
+  list-style: height 2.5em;
+}
+.line {
+  padding-bottom: 7px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #99ff99;
+  background-color: #99ff99;
+  padding: 7px;
+  margin-left: 300px;
+  margin-right: 300px;
+
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #d6f5d6;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ffe6b3;
+}
+
+/* Style the tab content */
+.tabcontent {
+  margin-left: 300px;
+  margin-right: 300px;
+  display: none;
+  padding: 3px 12px 20px 15px;
+  border: 1px solid #ccc;
+  border-top: none;
+  font-family: arial, verdana, helvetica;
+  font-size: 20px;
+  list-style: 1.5em;
+}

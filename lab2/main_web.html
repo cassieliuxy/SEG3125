@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <! This style sheet is taken from https://www.w3schools.com/howto/howto_js_tabs.asp>
+        <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="main">
+    <!-- Grocery name -->
+    <div class="title">
+        <img src="logo.jpg" alt="logo" width="600" height="300">
+        <p style="font-size: 32px; font-weight: bold; font-family: arial, verdana, helvetica;">Welcome to <a style="color: #ff9900;">Health</a> <a style="color: #33cc33">Food Market</a> Website!</p>
+    </div>
+
+    <!-- Tab links, each one with an onclick event associated with it -->
+    <div class="tab">
+        <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+        <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+        <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="Client" class="tabcontent">
+        <h3>Client Information</h3>
+        <p>Tell us a bit about you.</p>
+        <p>*Choose a Category:</p>
+        <select id="dietSelect" style="font-size: 18px;" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+            <option value=""></option>
+            <option value="Vegetarian">Vegetarian</option>
+            <option value="Vegetarian & Organic">Vegetarian + Organic</option>
+            <option value="Vegetarian & Inorganic">Vegetarian + Inorganic</option>
+            <option value="GlutenFree">GlutenFree</option>
+            <option value="GlutenFree & Organic">GlutenFree + Organic</option>
+            <option value="GlutenFree & Inorganic">GlutenFree + Inorganic</option>
+            <option value="Vegetarian & GlutenFree">Vegetarian & GlutenFree</option>
+            <option value="Vegetarian & GlutenFree & Organic">Vegetarian & GlutenFree + Organic</option>
+            <option value="Vegetarian & GlutenFree & Inorganic">Vegetarian & GlutenFree + Inorganic</option>
+            <option value="None">No preference</option>
+        </select>
+
+    </div>
+
+    <div id="Products" class="tabcontent">
+        <h3>Your targeted products</h3>
+        <p>We preselected products based on your restrictions.</p>
+        <div class="line">Choose items to buy:</div>
+        <div id="displayProduct"></div><br>
+        <button id="addCart" type="button" class="block" style="font-size: 18px" onclick="selectedItems()">
+            Add selected items to cart.
+        </button>
+
+    </div>
+
+    <div id="Cart" class="tabcontent">
+        <h3>Cart</h3>
+        <p>Here is your cart.</p>
+        <div id="displayCart"></div>
+    </div>
+
+    <script src="groceries.js"></script>
+    <script src="main.js"></script>
+</div>
+    <!-- Footer -->
+    <div class="footer">
+        <footer>
+            Website designed by Xiaoyan Liu<br>
+            Contact information: <a href="xliu207@uottawa.ca">xliu207@uottawa.ca</a>
+        </footer>
+    </div>
+
+</body>
+
+</html>
