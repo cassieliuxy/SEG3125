@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <! This style sheet is taken from https://www.w3schools.com/howto/howto_js_tabs.asp>
+        <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="main">
+    <!-- Grocery name -->
+    <div class="title">
+        <img src="logo.jpg" alt="logo" width="400" height="200">
+        <p style="font-size: 28px; font-weight: bold; font-family: arial, verdana, helvetica;">Welcome to <a style="color: #ff9900;">Health</a> <a style="color: #33cc33">Food Market</a> Website!</p>
+    </div>
+
+    <!-- Tab links, each one with an onclick event associated with it -->
+    <div class="tab">
+        <button class="tablinks" onclick="openInfo(event, 'Home')" id="defaultOpen">Home</button>
+        <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+        <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+        <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+    </div>
+
+    <div id="Home" class="tabcontent">
+        <div class="food"><img src="food_market.jpg" alt="food_market" width="700" height="350"></div>
+        <h3>Welcome to Health Food Market!</h3>
+        <p>We offer fresh health food.</p>
+        <p>We will preselect the food according to your preferences.</p>
+        <p>Please press the "Client" button on the menu to start your shopping process.</p>
+    </div>
+
+    <!-- Tab content -->
+    <div id="Client" class="tabcontent">
+        <h3>Client Information</h3>
+        <p>Tell us a bit about you.</p>
+        <p>*Choose a food category:</p>
+        <select id="dietSelect" style="font-size: 18px;" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+            <option value=""></option>
+            <option value="Vegetarian">Vegetarian food</option>
+            <option value="Vegetarian & Organic">Vegetarian food + Organic food</option>
+            <option value="Vegetarian & Inorganic">Vegetarian food + Inorganic food</option>
+            <option value="GlutenFree">GlutenFree food</option>
+            <option value="GlutenFree & Organic">GlutenFree food + Organic food</option>
+            <option value="GlutenFree & Inorganic">GlutenFree food + Inorganic food</option>
+            <option value="Vegetarian & GlutenFree">Vegetarian food + GlutenFree food</option>
+            <option value="Vegetarian & GlutenFree & Organic">Vegetarian food + GlutenFree food + Organic food</option>
+            <option value="Vegetarian & GlutenFree & Inorganic">Vegetarian food + GlutenFree food + Inorganic food</option>
+            <option value="None">No preference</option>
+        </select>
+
+    </div>
+
+ 
+    <div id="Products" class="tabcontent">
+        <h3>Your targeted products</h3>
+        <p>We preselected products based on your preference.</p>
+        <div class="category_tab">
+            <div id="displayProduct">
+                <button class="cat_tablinks" onclick="openCategory(event, 'Fruits')">Fruits</button>
+                <div id="Fruits" class="cat_tabcontent">
+                </div>
+                <button class="cat_tablinks" onclick="openCategory(event, 'Vegetables')">Vegetables</button>
+                <div id="Vegetables" class="cat_tabcontent">
+                </div>
+                <button class="cat_tablinks" onclick="openCategory(event, 'Juices')">Juices</button>
+                <div id="Juices" class="cat_tabcontent">
+                </div>
+                <button class="cat_tablinks" onclick="openCategory(event, 'Meat')">Meat</button>
+                <div id="Meat" class="cat_tabcontent">
+                </div>
+                <button class="cat_tablinks" onclick="openCategory(event, 'Gluten Food')">Gluten Food</button>
+                <div id="Gluten Food" class="cat_tabcontent">
+                </div>
+                <button class="cat_tablinks" onclick="openCategory(event, 'Cooking Products')">Cooking Products</button>
+                <div id="Cooking Products" class="cat_tabcontent">
+                </div>
+            </div>
+          </div>
+        <br>
+        <button id="addCart" type="button" class="block" style="font-size: 18px" onclick="selectedItems()">
+            Add selected items to cart.
+        </button>
+        
+
+    </div>
+    <div id="Cart" class="tabcontent">
+        <h3>Shopping Cart</h3>
+        <p>Please review your order.</p>
+        <div id="displayCart"></div><br>
+        <input type="submit" value="Checkout" style="font-size: 16px">
+    </div>
+
+    <script src="groceries.js"></script>
+    <script src="main.js"></script>
+    
+</div>
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <footer>
+            Website designed by Xiaoyan Liu<br>
+            Contact information: <a href="xliu207@uottawa.ca">xliu207@uottawa.ca</a>
+        </footer>
+    </div>
+
+</body>
+
+</html>
