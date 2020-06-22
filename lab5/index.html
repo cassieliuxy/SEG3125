@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bike Fix</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+  <div style="text-align: center;" >
+  <img src="logo.jpg" alt="logo" width="50%" height="50%"></div>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="service.js"></script>
+  
+</head>
+
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <div class="container-fluid">
+      <div class="navbar-header">
+    <a class="navbar-brand" href="#">Menu</a></div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#service"><img src="icon_service.jpg" alt="logo" style="width:35px;"> Service</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="#staff"><img src="icon_staff.jpg" alt="logo" style="width:35px;"> Staff</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#customer"><img src="icon_customer.jpg" alt="logo" style="width:35px;"> Appointment</a>
+        </li>   
+     </ul></div>
+    </div>  
+  </nav><br>
+
+
+  <div class="alert alert-danger">
+    <strong>About Covid-19:</strong> You should <a href="#" class="alert-link">read this message</a>.
+  </div>
+    <div class="background">
+      <img src="background_pic.jpg" alt="background" width="100%" height="100%" />
+        <span class="text_box">
+          Welcome to BIKE FIX COMPANY!<br>
+          We have professional services and equipment, is a well-known bicycle repair company in Ottawa.
+        </span>
+        <span class="company_info">Address: 52 King, K1N 7L3<br>Tel: +1 (613)-333-9090<br>Email: bike-fix@bfoffice.ca
+          </span>
+        
+    </div>
+    <div class="services" id="service"><img src="icon_service.jpg" alt="service_logo" style="width:40px; height: 40px;"> Our Services</div>
+
+<div><table class="table_services" bordercolor="#a8dba8" cellpadding="0">
+  <thead>
+    <tr>
+      <th><img src="service1.jpg" width="300" height="300"></th>
+      <th><img src="service2.jpg" width="300" height="300"></th>
+      <th><img src="service3.jpg" width="300" height="300"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Replacing Parts</td>
+      <td>Bicycle Equipment</td>
+      <td>Repair Services</td>
+    </tr>
+    <tr>
+      <td>Monday~Friday: 10:00-15:00</td>
+      <td>Monday~Friday: 10:00-17:00</td>
+      <td>Monday~Friday: 14:00-17:00</td>
+    </tr>
+    <tr>
+      <td>Saturday~Sunday: 11:00-15:00</td>
+      <td>Saturday~Sunday: 11:00-15:00</td>
+      <td>Saturday~Sunday: 11:00-15:00</td>
+    </tr>
+    <tr>
+      <td>Service Fees: $10~$120</td>
+      <td>Equipment Fees: $5~$800</td>
+      <td>Service Fees: $10~$300</td>
+    </tr>
+   
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> `</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<div class="team" id="staff"><img src="icon_staff.jpg" alt="staff_logo" style="width:40px; height:40px;"> Our Team</div>
+<div><table class="table_staffs" bordercolor="#fff" cellpadding="0">
+  <thead>
+    <tr>
+      <th><img src="staff1.jpg" width="300" height="300"></th>
+      <th><img src="staff2.jpg" width="300" height="300"></th>
+      <th><img src="staff3.jpg" width="300" height="300"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Jacobs</td>
+      <td>Bob</td>
+      <td>Nicholas</td>
+    </tr>
+    <tr>
+      <td>"Make your bike cool!"</td>
+      <td>"Keep you safe."</td>
+      <td>"Focus on details."</td>
+    </tr>
+    <tr>
+      <td>Tel: +1 (613)-355-9090</td>
+      <td>Tel: +1 (613)-358-9070</td>
+      <td>Tel: +1 (613)-755-6090</td>
+    </tr>
+    <tr>
+      <td>*Monday off</td>
+      <td>*Thursday off</td>
+      <td>*Friday off</td>
+    </tr>
+  </tbody>
+</table></div>
+<br>
+<div class="customer" id="customer">
+  <br>
+  <h3><img src="icon_customer.jpg" alt="customer_logo" style="width:40px; height:40px;"> Please contact us if you have requests:</h3><br>
+  <form method="post" action="">
+		<input type="hidden" name="recipient" value="deitel@deitel.com">
+		<input type="hidden" name="subject" value="Feedback Form">
+		<input type="hidden" name="redirect" value="main.html">
+
+		<p><label>Name:
+      <input type="text" placeholder="Name" name="name" size="25" maxlength="30"></label></p>
+      <p>Phone Number: <input value="(613)" type="text" id="phone"></p>
+		<p><label>E-mail Address:
+      <input type="email" placeholder="example@domain.com" name="email" size="25"></label></p><br>
+      
+		<p>
+			<div class="customer_question">Choose the services:</div>
+			<label><input type="checkbox" name="select_service" value="replace"> Replacing Parts</label><br>
+      <label><input type="checkbox" name="select_service" value="equipment"> Bicycle Equipment</label><br>
+      <label><input type="checkbox" name="select_service" value="repair"> Repair Services</label><br>
+      <label><input type="checkbox" name="select_service" value="ask"> Ask for Help</label>
+		</p><br>
+	
+      <div class="customer_question">To choose a staff and select an appointment time:</div>
+      <div><table class="table_appointment" bordercolor="#a8dba8">
+        <thead>
+          <tr>
+            <th>Jacobs:</th>
+            <th>Nicholas:</th>
+            <th>Bob:</th>
+          </tr>
+
+          <tr>
+          <td>
+			<label>
+				<input type="radio" name="time" value="Tuesday"> Tuesday</label><br>
+			<label>
+				<input type="radio" name="time" value="Wednesday"> Wednesday</label><br>
+			<label>
+        <input type="radio" name="time" value="Thursday"> Thursday</label><br>
+        <label>
+          <input type="radio" name="time" value="Friday"> Friday</label><br>
+          <label>
+            <input type="radio" name="time" value="Saturday"> Saturday</label><br>
+            <label>
+              <input type="radio" name="time" value="Sunday"> Sunday</label><br></td>
+
+              <td>
+              <label>
+                  <input type="radio" name="time" value="Monday"> Monday </label><br>
+              <label>
+                <input type="radio" name="time" value="Tuesday"> Tuesday</label><br>
+              <label>
+                <input type="radio" name="time" value="Wednesday"> Wednesday</label><br>
+              <label>
+                <input type="radio" name="time" value="Thursday"> Thursday</label><br>
+             
+                  <label>
+                    <input type="radio" name="time" value="Saturday"> Saturday</label><br>
+                    <label>
+                      <input type="radio" name="time" value="Sunday"> Sunday</label><br></td>
+                     
+                        <td>
+              <label>
+                  <input type="radio" name="time" value="Monday"> Monday </label><br>
+              <label>
+                <input type="radio" name="time" value="Tuesday"> Tuesday</label><br>
+              <label>
+                <input type="radio" name="time" value="Wednesday"> Wednesday</label><br>
+                <label>
+                  <input type="radio" name="time" value="Friday"> Friday</label><br>
+             
+                  <label>
+                    <input type="radio" name="time" value="Saturday"> Saturday</label><br>
+                    <label>
+                      <input type="radio" name="time" value="Sunday"> Sunday</label><br></td>
+                    </tr>
+                  </thead>
+                  </table>
+                  </div>
+
+                  
+     <strong>Time:</strong><br>
+      <label>
+				<input type="radio" name="clock" value="time_10"> 10:00 (Not available on Saturday and Sunday)</label><br> 
+			<label>
+				<input type="radio" name="clock" value="time_11"> 11:00</label><br>
+			<label>
+				<input type="radio" name="clock" value="time_12"> 12:00</label><br>
+			<label>
+        <input type="radio" name="clock" value="time_13"> 13:00</label><br>
+        <label>
+          <input type="radio" name="clock" value="time_14"> 14:00</label><br>
+          <label>
+            <input type="radio" name="clock" value="time_15"> 15:00</label><br>
+            <label>
+              <input type="radio" name="clock" value="time_16"> 16:00 (Not available on Saturday and Sunday)</label><br>
+              <label>
+                <input type="radio" name="clock" value="time_17"> 17:00 (Not available on Saturday and Sunday)</label>
+    
+    
+
+
+		<p><label><div class="customer_question">Extra message:</div>
+      <textarea name="message" rows="5" cols="80" placeholder="Enter message here."></textarea></label></p><br>
+
+      <div class="customer_question">Reservation fee:</div>
+
+      <p>Credit Card Number: <input type="text" id="card" placeholder="xxxx-xxxx-xxxx-xxxx" maxlength="16" title="We ask for your credit card number in case of no-show, 15$ will be charged.">
+      </p>
+      <p>Expiry date: <select name='expireMM' id='expireMM'>
+        <option value=''>Month</option>
+        <option value='01'>01</option>
+        <option value='02'>02</option>
+        <option value='03'>03</option>
+        <option value='04'>04</option>
+        <option value='05'>05</option>
+        <option value='06'>06</option>
+        <option value='07'>07</option>
+        <option value='08'>08</option>
+        <option value='09'>09</option>
+        <option value='10'>10</option>
+        <option value='11'>11</option>
+        <option value='12'>12</option>
+    </select> 
+    <select name='expireYY' id='expireYY'>
+        <option value=''>Year</option>
+        <option value='20'>2020</option>
+        <option value='21'>2021</option>
+        <option value='22'>2022</option>
+        <option value='23'>2023</option>
+        <option value='24'>2024</option>
+        <option value='25'>2025</option>
+        <option value='26'>2026</option>
+        <option value='27'>2027</option>
+        <option value='28'>2028</option>
+        <option value='29'>2029</option>
+        <option value='30'>2030</option>
+    </select> </p>
+      <p>CVV: <input type="text" maxlength="3" id="cvv" placeholder="Security Code" name="cvv"></p><br><br>
+    
+      <p><input type="submit" value="Submit">
+      <input type="reset" value="Clear"> 
+       <br><br>
+  </form>
+  <br><br><br><br><br><br><br>
+  <div class="footer">
+    <footer>
+        Website designed by Xiaoyan Liu<br>
+        Contact information: <a href="xliu207@uottawa.ca">xliu207@uottawa.ca</a>
+    </footer>
+</div>
+<br>
+</div>
+
+
+</body>
