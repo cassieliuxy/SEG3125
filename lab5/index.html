@@ -54,17 +54,17 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#service"><img src="icon_service.jpg" alt="logo" style="width:35px;"> Service</a>
+          <a class="nav-link" href="#service"><img src="icon_service_white.jpg" alt="logo" style="width:40px;"> Service</a>
         </li> 
         <li class="nav-item">
-          <a class="nav-link" href="#staff"><img src="icon_staff.jpg" alt="logo" style="width:35px;"> Staff</a>
+          <a class="nav-link" href="#staff"><img src="icon_staff.jpg" alt="logo" style="width:40px;"> Staff</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#customer"><img src="icon_customer.jpg" alt="logo" style="width:35px;"> Appointment</a>
+          <a class="nav-link" href="#customer"><img src="icon_customer_white.jpg" alt="logo" style="width:40px;"> Appointment</a>
         </li>   
      </ul></div>
     </div>  
-  </nav><br>
+  </nav>
 
 
   <div class="alert alert-danger">
@@ -80,7 +80,7 @@
           </span>
         
     </div>
-    <div class="services" id="service"><img src="icon_service.jpg" alt="service_logo" style="width:40px; height: 40px;"> Our Services</div>
+    <div class="services" id="service"><img src="icon_service.jpg" alt="service_logo" style="width:50px; height: 50px;"> Our Services</div>
 
 <div><table class="table_services" bordercolor="#a8dba8" cellpadding="0">
   <thead>
@@ -120,7 +120,7 @@
   </tbody>
 </table></div>
 
-<div class="team" id="staff"><img src="icon_staff.jpg" alt="staff_logo" style="width:40px; height:40px;"> Our Team</div>
+<div class="team" id="staff"><img src="icon_staff.jpg" alt="staff_logo" style="width:50px; height:50px;"> Our Team</div>
 <div><table class="table_staffs" bordercolor="#fff" cellpadding="0">
   <thead>
     <tr>
@@ -145,21 +145,17 @@
       <td>Tel: +1 (613)-358-9070</td>
       <td>Tel: +1 (613)-755-6090</td>
     </tr>
-    <tr>
-      <td>*Monday off</td>
-      <td>*Thursday off</td>
-      <td>*Friday off</td>
-    </tr>
   </tbody>
 </table></div>
 <br>
 <div class="customer" id="customer">
   <br>
-  <h3><img src="icon_customer.jpg" alt="customer_logo" style="width:40px; height:40px;"> Please contact us if you have requests:</h3><br>
+  <h3><img src="icon_customer.jpg" alt="customer_logo" style="width:50px; height:50px;"> Please contact us if you have requests:</h3><br>
   <form method="post" action="">
 		<input type="hidden" name="recipient" value="deitel@deitel.com">
 		<input type="hidden" name="subject" value="Feedback Form">
-		<input type="hidden" name="redirect" value="main.html">
+    <input type="hidden" name="redirect" value="main.html">
+    <p><a style="text-decoration:underline; font-weight: bold;">*No appointment is required on Saturday or Saturday</a></p>
 
 		<p><label>Name:
       <input type="text" placeholder="Name" name="name" size="25" maxlength="30"></label></p>
@@ -168,23 +164,31 @@
       <input type="email" placeholder="example@domain.com" name="email" size="25"></label></p><br>
       
 		<p>
-			<div class="customer_question">Choose the services:</div>
+			<div class="customer_question"><img src="select_service.jpg" alt="select_service_logo" style="width:50px; height:50px;"> Choose the service(s):</div>
 			<label><input type="checkbox" name="select_service" value="replace"> Replacing Parts</label><br>
       <label><input type="checkbox" name="select_service" value="equipment"> Bicycle Equipment</label><br>
       <label><input type="checkbox" name="select_service" value="repair"> Repair Services</label><br>
       <label><input type="checkbox" name="select_service" value="ask"> Ask for Help</label>
 		</p><br>
 	
-      <div class="customer_question">To choose a staff and select an appointment time:</div>
-      <div><table class="table_appointment" bordercolor="#a8dba8">
+      <div class="customer_question"><img src="staff_time.jpg" alt="staff_time_logo" style="width:50px; height:50px;"> To choose a staff and select an appointment time:</div>
+      <div>     <strong>Staff: </strong>
+        <label>
+          <input type="radio" name="staff" value="Jacobs"> Jacobs</label>
+        <label>
+          <input type="radio" name="staff" value="Nicholas" style="margin-left: 20px;"> Nicholas</label>
+        <label>
+          <input type="radio" name="staff" value="Bob" style="margin-left: 20px;"> Bob</label><br></div>
+          <strong>Date: <input type="text" id="dateInput"></strong> 
+      <!-- <div><table class="table_appointment" bordercolor="#a8dba8">
         <thead>
           <tr>
             <th>Jacobs:</th>
             <th>Nicholas:</th>
             <th>Bob:</th>
-          </tr>
+          </tr> -->
 
-          <tr>
+          <!-- <tr>
           <td>
 			<label>
 				<input type="radio" name="time" value="Tuesday"> Tuesday</label><br>
@@ -228,15 +232,26 @@
                     <input type="radio" name="time" value="Saturday"> Saturday</label><br>
                     <label>
                       <input type="radio" name="time" value="Sunday"> Sunday</label><br></td>
-                    </tr>
-                  </thead>
+                    </tr> -->
+                  <!-- </thead>
                   </table>
-                  </div>
+                  </div> -->
 
                   
-     <strong>Time:</strong><br>
-      <label>
-				<input type="radio" name="clock" value="time_10"> 10:00 (Not available on Saturday and Sunday)</label><br> 
+     <strong>Time:</strong>
+     <select name='application_time' id='application_time'>
+      <option value=''> </option>
+      <option value="time_10"> 10:00</option>
+      <option value="time_11"> 11:00</option>
+      <option value="time_12"> 12:00</option>
+      <option value="time_13"> 13:00</option>
+      <option value="time_14"> 14:00</option>
+      <option value="time_15"> 15:00</option>
+      <option value="time_16"> 16:00</option>
+      <option value="time_17"> 17:00</option>
+  </select> 
+      <!-- <label>
+				<input type="radio" name="clock" value="time_10"> 10:00</label><br> 
 			<label>
 				<input type="radio" name="clock" value="time_11"> 11:00</label><br>
 			<label>
@@ -248,17 +263,17 @@
           <label>
             <input type="radio" name="clock" value="time_15"> 15:00</label><br>
             <label>
-              <input type="radio" name="clock" value="time_16"> 16:00 (Not available on Saturday and Sunday)</label><br>
+              <input type="radio" name="clock" value="time_16"> 16:00</label><br>
               <label>
-                <input type="radio" name="clock" value="time_17"> 17:00 (Not available on Saturday and Sunday)</label>
-    
+                <input type="radio" name="clock" value="time_17"> 17:00</label>
+     -->
     
 
 
-		<p><label><div class="customer_question">Extra message:</div>
+		<p><label><div class="customer_question"><img src="message.jpg" alt="message_logo" style="width:50px; height:50px;"> Extra message:</div>
       <textarea name="message" rows="5" cols="80" placeholder="Enter message here."></textarea></label></p><br>
 
-      <div class="customer_question">Reservation fee:</div>
+      <div class="customer_question"><img src="payment.jpg" alt="pay_logo" style="width:50px; height:50px;"> Reservation fee:</div>
 
       <p>Credit Card Number: <input type="text" id="card" placeholder="xxxx-xxxx-xxxx-xxxx" maxlength="16" title="We ask for your credit card number in case of no-show, 15$ will be charged.">
       </p>
