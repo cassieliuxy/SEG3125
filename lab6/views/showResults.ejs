@@ -1,0 +1,88 @@
+<html lang="en-US">
+<head>
+    <title>Survey Analysis</title>
+</head>
+
+<body>
+    <h1>Survey analysis</h1>
+    <h2>Roles</h2>
+    <ul>
+    <% for (var i=0; i<results[0].length; i++){ %>
+        <li><%= results[0][i].role %> :  <%= results[0][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Advantages</h2>
+    <ul>
+    <% for (var i=0; i<results[1].length; i++){ %>
+        <li><%= results[1][i].interested %> :  <%= results[1][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Features used frequently</h2>
+    <ul>
+    <% for (var i=0; i<results[2].length; i++){ %>
+        <li><%= results[2][i].thingsliked %> :  <%= results[2][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Features rating (range from 1 - 10)</h2>
+    Recommended
+    <ul>
+    <% for (var i=0; i<results[3].length; i++){ %>
+        <li><%= results[3][i].recommended %> :  <%= results[3][i].count %></li>
+    <% } %>
+    </ul>
+    Trending
+    <ul>
+    <% for (var i=0; i<results[4].length; i++){ %>
+        <li><%= results[4][i].trending %> :  <%= results[4][i].count %></li>
+    <% } %>
+    </ul>
+    Page Tags
+    <ul>
+    <% for (var i=0; i<results[5].length; i++){ %>
+        <li><%= results[5][i].page_tags %> :  <%= results[5][i].count %></li>
+    <% } %>
+    </ul>
+    Help and Setting
+    <ul>
+    <% for (var i=0; i<results[6].length; i++){ %>
+        <li><%= results[6][i].help_setting %> :  <%= results[6][i].count %></li>
+    <% } %>
+    </ul>
+    Safety Policy
+    <ul>
+    <% for (var i=0; i<results[7].length; i++){ %>
+        <li><%= results[7][i].safety_policy %> :  <%= results[7][i].count %></li>
+    <% } %>
+    </ul>
+    Footer
+    <ul>
+    <% for (var i=0; i<results[8].length; i++){ %>
+        <li><%= results[8][i].footer %> :  <%= results[8][i].count %></li>
+    <% } %>
+    </ul>
+    Efficiency
+    <ul>
+    <% for (var i=0; i<results[9].length; i++){ %>
+        <li><%= results[9][i].efficiency %> :  <%= results[9][i].count %></li>
+    <% } %>
+    </ul>
+    Coherence
+    <ul>
+    <% for (var i=0; i<results[10].length; i++){ %>
+        <li><%= results[10][i].coherence %> :  <%= results[10][i].count %></li>
+    <% } %>
+    </ul>
+    <h2>Primary goals</h2>
+    <ul>
+    <% for (var i=0; i<results[11].length; i++){ %>
+        <li><%= results[11][i].comments %> :  <%= results[11][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Suggestions</h2>
+    <ul>
+    <% for (var i=0; i<results[12].length; i++){ %>
+        <li><%= results[12][i].suggestions %> :  <%= results[12][i].count %></li>
+    <% } %>    
+    </ul>
+</body>
+</html>

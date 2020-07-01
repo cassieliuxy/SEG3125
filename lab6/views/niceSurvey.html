@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/design.css" type="text/css" rel="stylesheet" />
+    <title>Questionaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+</head>
+
+<body style="background-color: #b3d9ff;">
+    <p>
+        <h1 style="text-align:center">Questionnaire about YouTube Website</h1>
+    </p>
+    <form name="YouTube Questionnaire" method="POST">
+        <p>
+            <div class="youtube">
+                <a href="http://www.youtube.com"><img src="images/youtube-logo.png" alt="youtube Logo" height="200"
+                        width="400"></a></div>
+        </p>
+        <div class="youtube"><a href="http://www.youtube.com">YouTube Link</a></div>
+        <br>
+        <div class="text">_________________________________________________________________________________</div><br>
+
+        <!-- Personal Information -->
+        <h3> Personal Information </h2>
+            <div class="info">
+                <p>First name: <input type="text" name="firstname"></p>
+            </div>
+            <div class="info">
+                <p>Last name: <input type="text" name="lastname"></p>
+            </div>
+            <div class="info">
+                <p><label>E-mail Address:
+                        <input type="email" placeholder="name@domain.com" name="email" size="25"></label></p>
+            </div><br>
+            <div class="text">_________________________________________________________________________________</div>
+            <br>
+
+            <!-- Selection List -->
+            <p>
+                <h3>What's your main role when you use this website?</h3>
+                <div class="box">
+            </p>
+            <select name="role">
+                <option value="Visitor" selected="selected">Visitor</option>
+                <option value="Member">Member</option>
+                <option value="YouTuber">YouTuber</option>
+                <option value="Sponsor">Sponsor</option>
+            </select>
+            </div><br>
+            <div class="text">_________________________________________________________________________________</div>
+            <br>
+
+            <!-- Required Answer -->
+            <h3>
+                <p><label>*What are your primary goals for this Website? (e.g. watching films, studying, releasing
+                        videos):<br> </label></p>
+            </h3>
+            <div class="box">
+                <textarea name="comments" rows="3" cols="60" placeholder="Watching films, studying, releasing videos..."
+                    required></textarea></div><br>
+            <div class="text">_________________________________________________________________________________</div>
+            <br>
+
+
+            <!-- Radio -->
+            <p>
+                <h3>What do you find best about YouTube website?</h3>
+                <div class="box">
+                    <p><label>
+                            <input type="radio" name="interested" value="Ease of use">Ease of use</label></p>
+                    <p><label>
+                            <input type="radio" name="interested" value="User interface">User interface</label></p>
+                    <p><label>
+                            <input type="radio" name="interested" value="Features provided">Features provided</label></p>
+                    <p><label>
+                            <input type="radio" name="interested" value="Quality of recommended videos">Quality of recommended videos</label>
+                    </p>
+                    <p><label>
+                        <input type="radio" name="interested" value="Others">Others</label>
+                    </p>
+                
+                </div>
+            </p><br>
+            <div class="text">_________________________________________________________________________________</div>
+            <br>
+
+
+            <!-- Checkbox -->
+            <p>
+                <h3>Which features do you use frequently?</h3>
+                <div class="box">
+                    <p><label><input type="checkbox" name="thingsliked" value="Search features">Search features</label>
+                    </p>
+                    <p><label><input type="checkbox" name="thingsliked" value="Recommended">Recommended</label></p>
+                    <p><label><input type="checkbox" name="thingsliked" value="Subscriptions">Subscriptions</label></p>
+                    <p><label><input type="checkbox" name="thingsliked" value="Trending">Trending</label></p>
+                    <p><label><input type="checkbox" name="thingsliked" value="Library">Library</label></p>
+                    <p><label><input type="checkbox" name="thingsliked" value="Create features">Create features</label>
+                    </p>
+                    <p><label><input type="checkbox" name="thingsliked" value="Live">Live</label></p>
+                </div>
+            </p><br>
+            <div class="text">_________________________________________________________________________________</div>
+            <br>
+
+            <!-- Gallery -->
+            <h3>Screenshots of YouTube website.</h3>
+            <div class="gb">
+                <div class="gallery">
+                    <a target="_blank" href="images/recommended.jpg">
+                        <img src="images/recommended.jpg" alt="recommended" width="600" height="400">
+                    </a>
+                    <div class="desc">Recommended</div>
+                </div>
+
+                <div class="gallery">
+                    <a target="_blank" href="images/trending.jpg">
+                        <img src="images/trending.jpg" alt="trending" width="600" height="400">
+                    </a>
+                    <div class="desc">Trending</div>
+
+                </div>
+
+                <div class="gallery">
+                    <a target="_blank" href="images/tags.jpg">
+                        <img src="images/tags.jpg" alt="tags" width="600" height="400">
+                    </a>
+                    <div class="desc">Page Tags</div>
+
+
+                </div>
+                <div class="gallery">
+                    <a target="_blank" href="images/help.jpg">
+                        <img src="images/help.jpg" alt="help" width="600" height="400">
+                    </a>
+                    <div class="desc">Help & Setting</div>
+                </div>
+
+                <div class="gallery">
+                    <a target="_blank" href="images/Safety.jpg">
+                        <img src="images/safety.jpg" alt="safety" width="600" height="400">
+                    </a>
+                    <div class="desc">Safety Policy.</div>
+                </div>
+
+                <div class="gallery">
+                    <a target="_blank" href="images/footer.jpg">
+                        <img src="images/footer.jpg" alt="footer" width="600" height="400">
+                    </a>
+                    <div class="desc">Footer</div>
+                </div>
+
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <!-- Agree/Disagree -->
+            <div class="text">_________________________________________________________________________________</div>
+            <br>
+            <div>
+                <h3>Please rate the features: </h3>
+
+                <div class="text">Recommended</div>
+                <div class="slidecontainer">1
+                    <input name="recommended" type="range" min="1" max="10" value="6" class="slider" id="myRange">10
+                </div><br>
+
+                <div class="text">Trending</div>
+                <div class="slidecontainer">1
+                    <input name="trending" type="range" min="1" max="10" value="6" class="slider" id="myRange">10
+                </div><br>
+
+                <div class="text">Page Tags</div>
+                <div class="slidecontainer">1
+                    <input name="page_tags" type="range" min="1" max="10" value="6" class="slider" id="myRange">10
+                </div><br>
+
+                <div class="text">Help and Setting</div>
+                <div class="slidecontainer">1
+                    <input name="help_setting" type="range" min="1" max="10" value="6" class="slider" id="myRange">10
+                </div><br>
+
+                <div class="text">Safety Policy</div>
+                <div class="slidecontainer">1
+                    <input name="safety_policy" type="range" min="1" max="10" value="6" class="slider" id="myRange">10
+                </div><br>
+
+                <div class="text">Footer</div>
+                <div class="slidecontainer">1
+                    <input name="footer" type="range" min="1" max="10" value="6" class="slider" id="myRange">10
+                </div><br>
+
+                <div class="text">Efficiency</div>
+                <div class="slidecontainer">1
+                    <input name="efficiency" type="range" min="1" max="10" value="6" class="slider" id="myRange">10
+                </div><br>
+
+                <div class="text">Coherence</div>
+                <div class="slidecontainer">1
+                    <input name="coherence" type="range" min="1" max="10" value="6" class="slider" id="myRange">10
+                </div><br>
+                <div class="text">_________________________________________________________________________________
+                </div><br>
+            </div>
+            <!-- Comments -->
+            <p>
+                <h3>Suggestions:</h3>
+                <div class="box">
+                    <textarea name="suggestions" rows="5" cols="60" placeholder="Enter comments here."></textarea></label>
+            </p>
+            <!-- submit + clear -->
+            <button type="submit" class="btn btn-warning" id="bb">Submit</button>
+            <p id="thanks"></p>
+            <input type="reset" value="Clear">
+            </div>
+    </form>
+    <script src="/assets/action.js"></script>
+    <br><br><br><br><br><br><br><br><br>
+    <div class="text">_________________________________________________________________________________</div>
+
+    <!-- Footer -->
+    <div class="box">
+        <footer>
+            <p>Website designed by Xiaoyan Liu</p>
+            <p>Contact information: <a href="xliu207@uottawa.ca">xliu207@uottawa.ca</a></p>
+        </footer>
+    </div>
+
+</body>
+
+
+
+</html>
