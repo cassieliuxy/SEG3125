@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <link href="design.css" type="text/css" rel="stylesheet" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title>register</title>
+
+
+</head>
+
+<body>
+    <div class="register_page" style="background:#f2f2ee; height:1300px ">
+        <img src="./pic/long_logo.jpg" alt="long_logo" width="100%">
+
+
+        <div class="container mt-5">
+
+            <div class="row">
+
+                <div class="align-middle text-primary">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                        <span class="fa fa-stack-1x fa-check"></span>
+                    </span>
+                    <div class="d-inline-block">
+                        <p class="mb-1"><strong>Basic Information</strong></p>
+                    </div>
+                </div>
+                <span class="col border border-primary mx-3 my-auto"></span>
+
+                <div class="align-middle text-primary">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <span class="fa-stack-1x text-white">2</span>
+                        <!-- <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <span class="fa-stack-1x">2</span> -->
+                    </span>
+                    <div class="d-inline-block">
+                        <p class="mb-1">Preferences</p>
+                    </div>
+                </div>
+
+                <span class="col border mx-3 my-auto"></span>
+                <div class="align-middle text-muted">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                        <span class="fa-stack-1x">3</span>
+                    </span>
+                    <div class="d-inline-block">
+                        <p class="mb-1">Finished!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br><br>
+        <form>
+            <div class="info" style="margin-left: 700px; color:#202228">
+                <h3><img src="./pic/more_info.jpg" height="50" width="50" /> Preferences </h3>
+                <p style="color:red">(There are two questions about your preferences. They are not required and can be
+                    skipped.)</p>
+
+                <h4>Which type of board games do you prefer?</h4>
+                <br>
+                <div class="box">
+                    <p><label><input type="checkbox" name="thingsliked" value="roll_move"> Roll and Move (example:
+                            Monopoly, Snakes and Ladders)</label></p>
+                    <p><label><input type="checkbox" name="thingsliked" value="cooperative"> Cooperative (example:
+                            Agricola, Stone Age)</label></p>
+                    <p><label><input type="checkbox" name="thingsliked" value="deck_building"> Deck Building (example:
+                            Roll for the Galaxy)</label></p>
+                    <p><label><input type="checkbox" name="thingsliked" value="area_control"> Area Control (example:
+                            Risk, War of the Ring)</label></p>
+                    <p><label><input type="checkbox" name="thingsliked" value="secret_id"> Secret Identity (example:
+                            Mafia, Two Rooms and a Boom)</label></p>
+                    <p><label><input type="checkbox" name="thingsliked" value="legacy"> Lagacy Games (example: Risk
+                            Legacy)</label></p>
+                    <p><label><input type="checkbox" name="thingsliked" value="party"> Party Games (example: What do you
+                            Meme?)</label></p>
+                    <p><label><input type="checkbox" name="thingsliked" value="puzzles"> Puzzles (example: Torres,
+                            Santorini)</label></p>
+                </div>
+                <br>
+
+                <h4>How many people do you like to play with?</h4>
+                <br>
+                <div class="box">
+                    <p><label>
+                            <input type="radio" name="interested" value="one_five"> 1~5</label></p>
+                    <p><label>
+                            <input type="radio" name="interested" value="six_ten"> 6~10</label></p>
+                    <p><label>
+                            <input type="radio" name="interested" value="ten_twenty"> 10~20</label></p>
+                    <p><label>
+                            <input type="radio" name="interested" value="twenty_more"> 20+</label>
+                    </p>
+                    
+                </div>
+                <br><br>
+                <div><input type="reset" value="<- Previous"><a style="color:#f2f2ee">00000000000000000000000</a><input
+                        type="submit" value="Next ->">
+                </div>
+        </form>
+    </div>
+</body>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <link href="design.css" type="text/css" rel="stylesheet" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <title>register</title>
+
+
+</head>
+
+<body>
+  <div class="register_page" style="background:#f2f2ee; height:1000px ">
+    <img src="./pic/long_logo.jpg" alt="long_logo" width="100%">
+
+
+    <div class="container mt-5">
+
+      <div class="row">
+
+        <div class="align-middle text-primary">
+          <span class="fa-stack fa-lg">
+            <!-- <i class="fa fa-circle-thin fa-stack-2x"></i> -->
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <span class="fa-stack-1x text-white">1</span>
+            <!-- <span class="fa fa-stack-1x fa-check"></span> -->
+          </span>
+          <div class="d-inline-block">
+            <p class="mb-1"><strong>Basic Information</strong></p>
+          </div>
+        </div>
+        <!-- <span class="col border border-primary mx-3 my-auto"></span> -->
+
+        <span class="col border mx-3 my-auto"></span>
+        <div class="align-middle text-muted">
+          <span class="fa-stack fa-lg">
+            <!-- <i class="fa fa-circle fa-stack-2x"></i>
+              <span class="fa-stack-1x text-white">2</span> -->
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <span class="fa-stack-1x">2</span>
+          </span>
+          <div class="d-inline-block">
+            <p class="mb-1">Preferences</p>
+          </div>
+        </div>
+
+        <span class="col border mx-3 my-auto"></span>
+        <div class="align-middle text-muted">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <span class="fa-stack-1x">3</span>
+          </span>
+          <div class="d-inline-block">
+            <p class="mb-1">Finished!</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+    <form>
+      <div class="info" style="margin-left: 830px; color:#202228">
+        <h3><img src="./pic/info.jpg" height="50" width="50" /> Personal Information </h3>
+        <p style="color:red">("*" means required information.)</p>
+
+        <div class="info">
+          <p>First name: <input type="text" name="firstname"></p>
+        </div>
+        <div class="info">
+          <p>Last name: <input type="text" name="lastname"></p>
+        </div>
+        <div class="info">
+          <p><label>*E-mail Address:
+              <input type="email" placeholder="name@domain.com" name="email" size="25" required></label></p>
+        </div>
+        <div class="info">
+          <p>*Password: <input type="password" name="password" id="password"></p>
+        </div>
+        <div class="info">
+          <p>*Confirm Password: <input type="password" name="password" id="re-password"></p>
+        </div>
+        <br><br>
+        <div><input type="reset" value="Clear"><a style="color:#f2f2ee">00000000000000000</a><input type="submit"
+            value="Next ->">
+        </div>
+    </form>
+  </div>
+</body>
